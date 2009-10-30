@@ -21,7 +21,7 @@ public class AjaxMouse {
 
 		Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
 			public void run() {
-				winstone.shutdown();        
+				winstone.shutdown();
 			}
 		}));
 
