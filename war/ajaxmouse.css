@@ -1,46 +1,46 @@
 body{
-width:100%;
-height:100%;
-background-color:#cccccc;
-overflow:hidden;
+	width:100%;
+	height:100%;
+	background-color:#cccccc;
+	overflow:hidden;
 }
 /*
 #status{
-width:100%;
-height:100%;
-position:fixed;
-top:0px;
-left:0px;
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
 }
 */
 #pad{
-width:100%;
-height:70%;
-position:fixed;
-top:0px;
-left:0px;
+	width:100%;
+	height:70%;
+	position:fixed;
+	top:0px;
+	left:0px;
 }
 #left{
-width:40%;
-height:30%;
-background-color:#eeeeee;
-position:fixed;
-bottom:0px;
-left:0px;
+	width:40%;
+	height:30%;
+	background-color:#eeeeee;
+	position:fixed;
+	bottom:0px;
+	left:0px;
 }
 #wheel{
-width:20%;
-height:30%;
-background-color:#dddddd;
-position:fixed;
-bottom:0%;
-left:40%;
+	width:20%;
+	height:30%;
+	background-color:#dddddd;
+	position:fixed;
+	bottom:0%;
+	left:40%;
 }
 #right{
-width:40%;
-height:30%;
-background-color:#eeeeee;
-position:fixed;
-bottom:0%;
-left:60%;
+	width:40%;
+	height:30%;
+	background-color:#eeeeee;
+	position:fixed;
+	bottom:0%;
+	left:60%;
 }

@@ -17,9 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 public class AjaxMouseServlet extends HttpServlet {
 
 	protected void doGet(
-    		HttpServletRequest request, 
-            HttpServletResponse response
-            ) throws ServletException, IOException {
+		HttpServletRequest request, 
+		HttpServletResponse response
+	) throws ServletException, IOException {
 
 		Robot robot;
 		try {
@@ -30,7 +30,7 @@ public class AjaxMouseServlet extends HttpServlet {
 		}
 
 		String eventType = request.getParameter("eventtype");
-		
+
 		if("mousemove".equals(eventType)){
 
 			Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -47,19 +47,19 @@ public class AjaxMouseServlet extends HttpServlet {
 			try{
 				moveY = Integer.parseInt(request.getParameter("y"));
 			}catch(Exception e){}
-		
+
 			Point point = MouseInfo.getPointerInfo().getLocation();
 			int currentX = point.x;
 			int currentY = point.y;
 
 			int nextX = currentX + moveX;
 			int nextY = currentY + moveY;
-			
+
 			if(minX > nextX){ nextX = minX; }
 			if(minY > nextY){ nextY = minY; }
 			if(maxX < nextX){ nextX = maxX; }
 			if(maxY < nextY){ nextY = maxY; }
-			
+
 			robot.mouseMove(nextX, nextY);
 
 		}else if("mousedown".equals(eventType)){
