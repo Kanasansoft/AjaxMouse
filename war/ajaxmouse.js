@@ -88,6 +88,7 @@ function wheelHandler(e){
 }
 
 function initialize(){
+	submit({"eventtype":"start"});
 	["touchstart","touchmove","touchend","gesturestart","gesturechange","gestureend"].forEach(
 		function(eventName){
 			document.addEventListener(eventName,handler,false);
